@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="androidGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3DDC84"/>
+      <stop offset="100%" style="stop-color:#2ECC71"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#1a1a2e" stroke="#3DDC84" stroke-width="3"/>
+
+  <!-- Android robot body -->
+  <rect x="60" y="95" width="80" height="55" rx="8" fill="url(#androidGreen)"/>
+
+  <!-- Android robot head -->
+  <path d="M60 85 Q60 65, 100 65 Q140 65, 140 85 L140 95 L60 95 Z" fill="url(#androidGreen)"/>
+
+  <!-- Eyes -->
+  <circle cx="80" cy="80" r="5" fill="#1a1a2e"/>
+  <circle cx="120" cy="80" r="5" fill="#1a1a2e"/>
+
+  <!-- Antennae -->
+  <line x1="75" y1="55" x2="85" y2="68" stroke="#3DDC84" stroke-width="4" stroke-linecap="round"/>
+  <line x1="125" y1="55" x2="115" y2="68" stroke="#3DDC84" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Arms -->
+  <rect x="45" y="100" width="12" height="40" rx="6" fill="url(#androidGreen)"/>
+  <rect x="143" y="100" width="12" height="40" rx="6" fill="url(#androidGreen)"/>
+
+  <!-- Legs -->
+  <rect x="75" y="150" width="14" height="25" rx="7" fill="url(#androidGreen)"/>
+  <rect x="111" y="150" width="14" height="25" rx="7" fill="url(#androidGreen)"/>
+</svg>
