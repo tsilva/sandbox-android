@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="logo.svg" alt="Sandbox Android" width="150"/>
+  <img src="logo.png" alt="sandbox-android" width="512"/>
 
-  # Sandbox Android
+  # sandbox-android
 
   [![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white)](https://developer.android.com/)
   [![Kotlin](https://img.shields.io/badge/Kotlin-1.9.0-7F52FF?style=flat-square&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
