@@ -1,7 +1,7 @@
 <div align="center">
   <img src="logo.png" alt="sandbox-android" width="512"/>
 
-  **🤖 Minimal Android sandbox for experimenting with Kotlin and Gradle builds**
+  **🤖 Minimal Android sandbox for experimenting with Kotlin and Gradle builds 📱**
 
 </div>
 
