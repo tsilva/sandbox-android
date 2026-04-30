@@ -1,68 +1,46 @@
 <div align="center">
-  <img src="logo.png" alt="sandbox-android" width="512"/>
+  <img src="./logo.png" alt="sandbox-android" width="420" />
 
   **🤖 Minimal Android sandbox for experimenting with Kotlin and Gradle builds 📱**
-
 </div>
 
-## Overview
+sandbox-android is a small Kotlin Android app for testing Android project setup, Gradle builds, and basic UI changes without extra application complexity.
 
-A minimal Android application template using Kotlin and Gradle Kotlin DSL. Perfect for quickly testing Android concepts, exploring new APIs, or prototyping features.
+It builds a single `:app` module that launches a `Hello World` screen through `MainActivity`.
 
-## Features
-
-- **Kotlin-first** - Modern Kotlin with JVM target 17
-- **Gradle Kotlin DSL** - Type-safe build configuration
-- **AndroidX** - AppCompat, ConstraintLayout, Material components
-- **Minimal setup** - Ready to build and run immediately
-
-## Quick Start
+## Install
 
 ```bash
-# Clone the repository
 git clone https://github.com/tsilva/sandbox-android.git
 cd sandbox-android
-
-# Build debug APK
 ./gradlew assembleDebug
-
-# Install on connected device/emulator
 ./gradlew installDebug
 ```
 
-## Requirements
+Open the installed `Hello World` app on a connected emulator or Android device.
 
-- **JDK**: 17+
-- **Android SDK**: API 24+ (min), API 31 (target)
-- **Gradle**: 8.x (wrapper included)
+## Commands
 
-## Project Structure
-
-```
-sandbox-android/
-├── app/
-│   ├── src/main/
-│   │   ├── java/com/example/helloworld/
-│   │   │   └── MainActivity.kt
-│   │   ├── res/
-│   │   │   ├── layout/activity_main.xml
-│   │   │   └── values/
-│   │   └── AndroidManifest.xml
-│   └── build.gradle.kts
-├── build.gradle.kts
-└── settings.gradle.kts
+```bash
+./gradlew assembleDebug     # build a debug APK
+./gradlew assembleRelease   # build a release APK
+./gradlew installDebug      # install the debug app on a connected device
+./gradlew check             # run Gradle checks
+./gradlew clean             # remove build outputs
 ```
 
-## Build Commands
+## Notes
 
-| Command | Description |
-|---------|-------------|
-| `./gradlew assembleDebug` | Build debug APK |
-| `./gradlew assembleRelease` | Build release APK |
-| `./gradlew installDebug` | Install on device |
-| `./gradlew clean` | Clean build artifacts |
-| `./gradlew check` | Run lint and checks |
+- Requires JDK 17 and an Android SDK installation.
+- Uses Gradle 8.2 through the wrapper, Android Gradle Plugin 8.1.0, and Kotlin 1.9.0.
+- Compiles against Android SDK 34 with min SDK 24 and target SDK 34.
+- The app uses AndroidX AppCompat, ConstraintLayout, Material Components, and a simple XML layout.
+- This is a single-module Android sandbox with no backend service or persistent storage.
+
+## Architecture
+
+![sandbox-android architecture diagram](./architecture.png)
 
 ## License
 
-MIT
+[MIT](LICENSE)
