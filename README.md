@@ -1,8 +1,10 @@
-<div align="center">
+<p align="center">
   <img src="./logo.png" alt="sandbox-android" width="420" />
-
-  **🤖 Minimal Android sandbox for experimenting with Kotlin and Gradle builds 📱**
-</div>
+  <br />
+  <!-- repo-tagline:start -->
+  <strong>🤖 Minimal Android sandbox for experimenting with Kotlin and Gradle builds 📱</strong>
+  <!-- repo-tagline:end -->
+</p>
 
 sandbox-android is a small Kotlin Android app for testing Android project setup, Gradle builds, and basic UI changes without extra application complexity.
 
